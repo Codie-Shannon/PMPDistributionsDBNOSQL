@@ -1,0 +1,148 @@
+/* Import Icon Font */
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css";
+
+/* Custom */
+/* ========================================== */
+:root {
+    --primary: rgb(53, 54, 58);
+    --secondary: rgb(37, 37, 37);
+    --tertiary: rgb(119, 119, 119);
+}
+
+@font-face {
+  font-family: "ITC Bauhaus Demi";
+
+  src: url("../fonts/itc-bauhaus-demi.woff2") format('woff2'),
+      url("../fonts/itc-bauhaus-demi.woff") format('woff'),
+      url("../fonts/itc-bauhaus-demi.ttf") format('truetype');
+
+  font-display: swap;
+}
+
+/* Main */
+/* ========================================== */
+body {
+    word-wrap: break-word;
+
+    height: 100%;
+
+    text-align: center;
+
+    margin: 0;
+
+    background-color: var(--primary);
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Text */
+/* ========================================== */
+* {
+    color: white;
+    font-family: 'ITC Bauhaus Demi';
+}
+
+h1 { 
+  font-size: 35px;
+  
+  padding: 15px;
+}
+
+h1, h2 { margin: 0; }
+
+h3, p { font-size: 17px; }
+
+/* Navigation */
+/* ========================================== */
+nav {
+    min-width: 210px;
+    width: 100%;
+
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+
+    border-bottom: 1px solid var(--tertiary);
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    background-color: var(--secondary);
+}
+
+/* Documents */
+/* ========================================== */
+.document {
+  background-color: var(--secondary);
+
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+.textblock, .tb-item {
+  width: 100%;
+
+  display: inline-block;
+}
+
+/* Other */
+/* ========================================== */
+.wrapper {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    top: 75px;
+
+    bottom: 0;
+    position: absolute;
+}
+
+.wrapper, .document { width: 100%; }
+
+.border {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: var(--tertiary);
+}
+
+/* Media Queries */
+/* ========================================== */
+@media only screen and (min-width: 740px) {
+  .wrapper { top: 73px; }
+}
+
+@media only screen and (min-width: 1000px) {
+  /* Documents */
+  /* ========================================== */
+  .document { background-color: var(--secondary); }
+
+  .textblock {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tb-item {
+    width: 50%;
+
+    padding: 0 20px 0 20px !important;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .l-item { justify-content: right; }
+
+  .r-item { justify-content: left; }
+
+  h3 { padding: 0 5px 0 9px; }
+
+  /* Body */
+  /* ========================================== */
+  .document {
+    width: 1000px;
+    margin: auto;
+  }
+
+  .border { border: 1px solid var(--tertiary); }
+}

@@ -1,0 +1,404 @@
+[
+    {
+        "title": "Run 1",
+        "contact":
+        {
+            "delivererName": { "first": "Sarah", "last": "Stewart" },
+            "phone": "021609930",
+            "email": "sarah.stewart@gmail.com",
+            "address": { "street": "King St", "city": "Whakatane" },
+            "availability": { "isavailable": false }
+        },
+        "delivery":
+        {
+            "pamphlets":
+            [
+                { "pamtype": "Farmers", "bundlequantity": 100 },
+                { "pamtype": "Pizza Hut", "bundlequantity": 1550 }
+            ],
+            "isdelivered": true
+        },
+        "map":
+        {
+            "mapimg": "https://github.com/CodieShannon/OvatoDistributions/blob/main/route_template.jpg?raw=true",
+            "deliverables": 143
+        }
+    },
+    {
+        "title": "Run 2",
+        "contact":
+        {
+            "delivererName": { "first": "Jennifer", "last": "Thompson" },
+            "phone": "021452412",
+            "email": "jennifer.thompson@outlook.com",
+            "address": { "street": "Douglas St", "city": "Whakatane" },
+            "availability": { "isavailable": true }
+        },
+        "delivery":
+        {
+            "pamphlets":
+            [
+                { "pamtype": "Repco", "bundlequantity": 200 },
+                { "pamtype": "Farmers", "bundlequantity": 100 },
+                { "pamtype": "Pizza Hut", "bundlequantity": 1550 },
+                { "pamtype": "Briscoes", "bundlequantity": 400 }
+            ],
+            "isdelivered": false
+        },
+        "map":
+        {
+            "mapimg": "https://github.com/CodieShannon/OvatoDistributions/blob/main/route_template.jpg?raw=true",
+            "deliverables": 230
+        }
+    },
+    {
+        "title": "Run 3",
+        "contact":
+        {
+            "delivererName": { "first": "Tony", "last": "Smith" },
+            "phone": "021113663",
+            "email": "tony.smith@outlook.co.nz",
+            "address": { "street": "Nelson St", "city": "Whakatane" },
+            "availability": { "isavailable": false }
+        },
+        "delivery":
+        {
+            "pamphlets":
+            [
+                { "pamtype": "Repco", "bundlequantity": 200 },
+                { "pamtype": "KFC", "bundlequantity": 800 },
+                { "pamtype": "Briscoes", "bundlequantity": 400 }
+            ],
+            "isdelivered": true
+        },
+        "map":
+        {
+            "mapimg": "https://github.com/CodieShannon/OvatoDistributions/blob/main/route_template.jpg?raw=true",
+            "deliverables": 124
+        }
+    },
+    {
+        "title": "Run 4",
+        "contact":
+        {
+            "delivererName": { "first": "Jeremy", "last": "Smith" },
+            "phone": "021898120",
+            "email": "jeremy.smith@gmail.co.nz",
+            "address": { "street": "Bracket St", "city": "Whakatane" },
+            "availability": { "isavailable": true }
+        },
+        "delivery":
+        {
+            "pamphlets":
+            [
+                { "pamtype": "Repco", "bundlequantity": 200 },
+                { "pamtype": "Farmers", "bundlequantity": 100 },
+                { "pamtype": "Pizza Hut", "bundlequantity": 1550 },
+                { "pamtype": "KFC", "bundlequantity": 800 }
+            ],
+            "isdelivered": false
+        },
+        "map":
+        {
+            "mapimg": "https://github.com/CodieShannon/OvatoDistributions/blob/main/route_template.jpg?raw=true",
+            "deliverables": 249
+        }
+    },
+    {
+        "title": "Run 5",
+        "contact":
+        {
+            "delivererName": { "first": "Jordan", "last": "Taylor" },
+            "phone": "021297567",
+            "email": "jordan.taylor@gmail.com.au",
+            "address": { "street": "McAlister St", "city": "Whakatane" },
+            "availability": { "isavailable": false }
+        },
+        "delivery":
+        {
+            "pamphlets":
+            [
+                { "pamtype": "Farmers", "bundlequantity": 100 },
+                { "pamtype": "Pizza Hut", "bundlequantity": 1550 },
+                { "pamtype": "KFC", "bundlequantity": 800 },
+                { "pamtype": "Briscoes", "bundlequantity": 400 }
+            ],
+            "isdelivered": true
+        },
+        "map":
+        {
+            "mapimg": "https://github.com/CodieShannon/OvatoDistributions/blob/main/route_template.jpg?raw=true",
+            "deliverables": 436
+        }
+    },
+    {
+        "title": "Run 6",
+        "contact":
+        {
+            "delivererName": { "first": "Cory", "last": "Jones" },
+            "phone": "021535633",
+            "email": "cory.jones@yahoo.com.au",
+            "address": { "street": "Simpkins St", "city": "Whakatane" },
+            "availability": { "isavailable": true }
+        },
+        "delivery":
+        {
+            "pamphlets":
+            [
+                { "pamtype": "Repco", "bundlequantity": 200 },
+                { "pamtype": "Pizza Hut", "bundlequantity": 1550 },
+                { "pamtype": "KFC", "bundlequantity": 800 },
+                { "pamtype": "Briscoes", "bundlequantity": 400 }
+            ],
+            "isdelivered": false
+        },
+        "map":
+        {
+            "mapimg": "https://github.com/CodieShannon/OvatoDistributions/blob/main/route_template.jpg?raw=true",
+            "deliverables": 389
+        }
+    },
+    {
+        "title": "Run 7",
+        "contact":
+        {
+            "delivererName": { "first": "Kurt", "last": "Jones" },
+            "phone": "021599765",
+            "email": "kurt.jones@yahoo.co.nz",
+            "address": { "street": "The Fairway", "city": "Whakatane" },
+            "availability": { "isavailable": false }
+        },
+        "delivery":
+        {
+            "pamphlets":
+            [
+                { "pamtype": "Repco", "bundlequantity": 200 },
+                { "pamtype": "Farmers", "bundlequantity": 100 },
+                { "pamtype": "Pizza Hut", "bundlequantity": 1550 },
+                { "pamtype": "Briscoes", "bundlequantity": 400 }
+            ],
+            "isdelivered": true
+        },
+        "map":
+        {
+            "mapimg": "https://github.com/CodieShannon/OvatoDistributions/blob/main/route_template.jpg?raw=true",
+            "deliverables": 136
+        }
+    },
+    {
+        "title": "Run 8",
+        "contact":
+        {
+            "delivererName": { "first": "Sarah", "last": "Anderson" },
+            "phone": "021399926",
+            "email": "sarah.anderson@outlook.com.au",
+            "address": { "street": "Awatapu Dr", "city": "Whakatane" },
+            "availability": { "isavailable": true }
+        },
+        "delivery":
+        {
+            "pamphlets":
+            [
+                { "pamtype": "Repco", "bundlequantity": 200 },
+                { "pamtype": "Pizza Hut", "bundlequantity": 1550 },
+                { "pamtype": "Briscoes", "bundlequantity": 400 }
+            ],
+            "isdelivered": false
+        },
+        "map":
+        {
+            "mapimg": "https://github.com/CodieShannon/OvatoDistributions/blob/main/route_template.jpg?raw=true",
+            "deliverables": 146
+        }
+    },
+    {
+        "title": "Run 9",
+        "contact":
+        {
+            "delivererName": { "first": "Levi", "last": "Jones" },
+            "phone": "022572179",
+            "email": "levi.jones@outlook.co.nz",
+            "address": { "street": "Henderson St", "city": "Whakatane" },
+            "availability": { "isavailable": false }
+        },
+        "delivery":
+        {
+            "pamphlets":
+            [
+                { "pamtype": "Pizza Hut", "bundlequantity": 1550 },
+                { "pamtype": "KFC", "bundlequantity": 800 }
+            ],
+            "isdelivered": true
+        },
+        "map":
+        {
+            "mapimg": "https://github.com/CodieShannon/OvatoDistributions/blob/main/route_template.jpg?raw=true",
+            "deliverables": 269
+        }
+    },
+    {
+        "title": "Run 10",
+        "contact":
+        {
+            "delivererName": { "first": "Sarah", "last": "Campbell" },
+            "phone": "021904306",
+            "email": "sarah.campbell@gmail.com",
+            "address": { "street": "Hawera St", "city": "Whakatane" },
+            "availability": { "isavailable": true }
+        },
+        "delivery":
+        {
+            "pamphlets":
+            [
+                { "pamtype": "Pizza Hut", "bundlequantity": 1550 },
+                { "pamtype": "Briscoes", "bundlequantity": 400 }
+            ],
+            "isdelivered": false
+        },
+        "map":
+        {
+            "mapimg": "https://github.com/CodieShannon/OvatoDistributions/blob/main/route_template.jpg?raw=true",
+            "deliverables": 312
+        }
+    },
+    {
+        "title": "Run 11",
+        "contact":
+        {
+            "delivererName": { "first": "Stacey", "last": "Reid" },
+            "phone": "021955102",
+            "email": "stacey.reid@outlook.com",
+            "address": { "street": "Barry Ave", "city": "Whakatane" },
+            "availability": { "isavailable": false }
+        },
+        "delivery":
+        {
+            "pamphlets":
+            [
+                { "pamtype": "Repco", "bundlequantity": 200 },
+                { "pamtype": "Farmers", "bundlequantity": 100 },
+                { "pamtype": "Pizza Hut", "bundlequantity": 1550 },
+                { "pamtype": "KFC", "bundlequantity": 800 },
+                { "pamtype": "Briscoes", "bundlequantity": 400 }
+            ],
+            "isdelivered": true
+        },
+        "map":
+        {
+            "mapimg": "https://github.com/CodieShannon/OvatoDistributions/blob/main/route_template.jpg?raw=true",
+            "deliverables": 488
+        }
+    },
+    {
+        "title": "Run 12",
+        "contact":
+        {
+            "delivererName": { "first": "Henry", "last": "Jones" },
+            "phone": "022380362",
+            "email": "henry.jones@gmail.com.au",
+            "address": { "street": "Landscape Rd", "city": "Whakatane" },
+            "availability": { "isavailable": true }
+        },
+        "delivery":
+        {
+            "pamphlets":
+            [
+                { "pamtype": "Repco", "bundlequantity": 200 },
+                { "pamtype": "Farmers", "bundlequantity": 100 },
+                { "pamtype": "Pizza Hut", "bundlequantity": 1550 },
+                { "pamtype": "KFC", "bundlequantity": 800 },
+                { "pamtype": "Briscoes", "bundlequantity": 400 }
+            ],
+            "isdelivered": false
+        },
+        "map":
+        {
+            "mapimg": "https://github.com/CodieShannon/OvatoDistributions/blob/main/route_template.jpg?raw=true",
+            "deliverables": 191
+        }
+    },
+    {
+        "title": "Run 13",
+        "contact":
+        {
+            "delivererName": { "first": "Levi", "last": "Martin" },
+            "phone": "021192130",
+            "email": "levi.martin@yahoo.co.nz",
+            "address": { "street": "Omega PI", "city": "Whakatane" },
+            "availability": { "isavailable": false }
+        },
+        "delivery":
+        {
+            "pamphlets":
+            [
+                { "pamtype": "Repco", "bundlequantity": 200 },
+                { "pamtype": "Farmers", "bundlequantity": 100 },
+                { "pamtype": "Pizza Hut", "bundlequantity": 1550 },
+                { "pamtype": "KFC", "bundlequantity": 800 },
+                { "pamtype": "Briscoes", "bundlequantity": 400 }
+            ],
+            "isdelivered": true
+        },
+        "map":
+        {
+            "mapimg": "https://github.com/CodieShannon/OvatoDistributions/blob/main/route_template.jpg?raw=true",
+            "deliverables": 216
+        }
+    },
+    {
+        "title": "Run 14",
+        "contact":
+        {
+            "delivererName": { "first": "Jennifer", "last": "Thompson" },
+            "phone": "021285753",
+            "email": "jennifer.thompson@yahoo.co.nz",
+            "address": { "street": "Harbour Rd", "city": "Whakatane" },
+            "availability": { "isavailable": true }
+        },
+        "delivery":
+        {
+            "pamphlets":
+            [
+                { "pamtype": "Repco", "bundlequantity": 200 },
+                { "pamtype": "Farmers", "bundlequantity": 100 },
+                { "pamtype": "Pizza Hut", "bundlequantity": 1550 },
+                { "pamtype": "KFC", "bundlequantity": 800 },
+                { "pamtype": "Briscoes", "bundlequantity": 400 }
+            ],
+            "isdelivered": false
+        },
+        "map":
+        {
+            "mapimg": "https://github.com/CodieShannon/OvatoDistributions/blob/main/route_template.jpg?raw=true",
+            "deliverables": 473
+        }
+    },
+    {
+        "title": "Run 15",
+        "contact":
+        {
+            "delivererName": { "first": "Cory", "last": "King" },
+            "phone": "021784325",
+            "email": "cory.king@outlook.com.au",
+            "address": { "street": "Ocean Rd", "city": "Whakatane" },
+            "availability": { "isavailable": false }
+        },
+        "delivery":
+        {
+            "pamphlets":
+            [
+                { "pamtype": "Repco", "bundlequantity": 200 },
+                { "pamtype": "Farmers", "bundlequantity": 100 },
+                { "pamtype": "Pizza Hut", "bundlequantity": 1550 },
+                { "pamtype": "KFC", "bundlequantity": 800 },
+                { "pamtype": "Briscoes", "bundlequantity": 400 }
+            ],
+            "isdelivered": true
+        },
+        "map":
+        {
+            "mapimg": "https://github.com/CodieShannon/OvatoDistributions/blob/main/route_template.jpg?raw=true",
+            "deliverables": 445
+        }
+    }
+]

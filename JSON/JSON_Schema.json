@@ -1,0 +1,155 @@
+db.createCollection('runs',
+{
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            additionalProperties: false,
+            required: ['_id', 'title', 'contact', 'delivery', 'map'],
+            properties: {
+                _id: { bsonType: 'objectId' },
+                title:
+                {
+                    bsonType: ['string'],
+                    description: 'title is required and must of datatype string with a max length of 100.'
+                },
+                contact: {
+                    bsonType: ['object'],
+                    required: ['delivererName', 'phone', 'email', 'address', 'availability'],
+                    additionalProperties: false,
+                    description: 'must only contain the specified fields.',
+                    properties: {
+                        delivererName: {
+                            bsonType: ['object'],
+                            required: ['first', 'last'],
+                            additionalProperties: false,
+                            description: 'must only contain the specified fields.',
+                            properties: {
+                                first: {
+                                    bsonType: 'string',
+                                    maxLength: 100,
+                                    description: 'first is required, must have a max length of 100, and must be of datatype string. first stores the first name of a contact.'
+                                },
+                                middle: {
+                                    bsonType: 'string',
+                                    maxLength: 100,
+                                    description: 'middle must have a max length of 100 and must be of datatype string. middle stores the middle name of a contact.'
+                                },
+                                last: {
+                                    bsonType: 'string',
+                                    maxLength: 100,
+                                    description: 'last is required, must have a max length of 100, and must be of datatype string. last stores the last name of a contact.'
+                                }
+                            }
+                        },
+                        phone: {
+                            bsonType: 'string',
+                            maxLength: 50,
+                            description: 'phone is required, must have a max length of 50 and must be of datatype string. phone stores a phone number for contacts.'
+                        },
+                        email: {
+                            bsonType: 'string',
+                            maxLength: 255,
+                            description: 'email is required, must have a max length of 255 and must be of datatype string. email stores an email for contacts.'
+                        },
+                        address: {
+                            bsonType: ['object'],
+                            required: ['street', 'city'
+                                                            ],
+                            additionalProperties: false,
+                            description: 'must contain the specified fields.',
+                            properties: {
+                                street: {
+                                    bsonType: 'string',
+                                    maxLength: 100,
+                                    description: 'street is required, must have a max length of 100 and must be of datatype string. street stores the street name for contacts.'
+                                },
+                                city: {
+                                    bsonType: 'string',
+                                    maxLength: 100,
+                                    description: 'city is required, must have a max length of 100 and must be of datatype string. city stores the city name for contacts.'
+                                }
+                        }
+                    },
+                        availability: {
+                            bsonType: ['object'],
+                            required: ['isavailable'],
+                            additionalProperties: false,
+                            description: 'must at least contain the isavailable field.',
+                            properties: {
+                                isavailable: {
+                                    bsonType: 'bool',
+                                    description: 'isavailable is required and must be of datatype boolean. isavailable stores the value which indicates if a contact is available.'
+                                },
+                                dateavail: {
+                                    bsonType: 'date',
+                                    description: 'dateavail must be of datatype date. dateavail stores the date the contact is available.'
+                                }
+                            }
+                        }
+                    }
+                },
+                delivery: {
+                    bsonType: ['object'],
+                    required: ['pamphlets', 'isdelivered'],
+                    additionalProperties: false,
+                    description: 'must contain the specified fields.',
+                    properties: {
+                        pamphlets: {
+                            bsonType: ['array'],
+                            minItems: 1,
+                            uniqueItems: true,
+                            additionalProperties: false,
+                            items: {
+                                bsonType: ['object'],
+                                required: ['pamtype', 'bundlequantity'],
+                                additionalProperties: false,
+                                description: 'must contain the specified fields.',
+                                properties: {
+                                    pamtype: {
+                                        enum: ['Supercheap Auto', 'Repco', 'Farmers', 'Pizza Hut', 'KFC', 'Briscoes'],
+                                        description: 'pamtype is required and can only be one of the given enum values.'
+                                    },
+                                    bundlequantity: {
+                                        bsonType: 'int',
+                                        minimum: 25,
+                                        maximum: 2000,
+                                        exclusiveMaximum: true,
+                                        description: 'bundlequantity is required and must be of datatype integer. bundlequantity is utilized to specify the size of a pamphlet type’s bundle.'
+                                    }
+                                }
+                            }
+                        },
+                        isdelivered: {
+                            bsonType: 'bool',
+                            description: 'isdelivered is required and must be of datatype boolean. isdelivered represents whether a delivery has occurred.'
+                        },
+                        deldate: {
+                            bsonType: 'date',
+                            description: 'deldate is required and must be of datatype date. deldate stores the date a delivery occurred.'
+                        }
+                    }
+                },
+                map: {
+                    bsonType: ['object'],
+                    required: ['mapimg', 'deliverables'],
+                    additionalProperties: false,
+                    description: 'must contain the specified fields.',
+                    properties: {
+                        mapimg: {
+                            bsonType: 'string',
+                            description: 'mapimg is required and must be of datatype string. mapimg stores a link to a map.'
+                        },
+                        deliverables: {
+                            bsonType: 'int',
+                            minimum: 25,
+                            maximum: 500,
+                            exclusiveMaximum: true,
+                            description: 'deliverables is required and must be of datatype integer. deliverables specifies the number of houses available for delivery on a map (route).'
+                        }
+                    }
+                }
+            }
+        }
+    }
+});
+
