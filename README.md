@@ -1,5 +1,5 @@
 # Small Business Database NOSQL
-The PMP Distributions database is a NOSQL database developed in MongoDB. It was created for a circular-newspaper enterprise.
+A small business database which I had to design and build for a circular-newspaper enterprise in MongoDB.
 
 
 # Video Evidence
