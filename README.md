@@ -1,4 +1,4 @@
-# PMP Distributions Database NOSQL
+# Small Business Database NOSQL
 The PMP Distributions database is a NOSQL database developed in MongoDB. It was created for a circular-newspaper enterprise.
 
 
